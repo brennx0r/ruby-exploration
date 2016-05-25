@@ -11,7 +11,8 @@ def fib(n)
 		puts n-1
 		return n-1
 	end
-	if n >= 3 
+	if n >= 3
+		# Solution does not yet incorporate concepts of memoization
 		i = fib(n-1).to_i+fib(n-2).to_i
 		puts i
 		return i
