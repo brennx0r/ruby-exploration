@@ -10,8 +10,8 @@ F=$1
 # Because the program will not complete successfully without an integer,
 # we need to exit the program as non zero.
 
-integer_regex='^[0-9]+$'
-if ! [[ $F =~ $integer_regex ]] ; then
+number_regex='-?[0-9]+([.][0-9]+)?$'
+if ! [[ $F =~ $number_regex ]] ; then
    echo "Error - Please use a whole positive or negative number for input." >&2; exit 1
 fi
 
