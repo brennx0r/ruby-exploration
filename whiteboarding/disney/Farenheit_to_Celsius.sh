@@ -15,6 +15,5 @@ if ! [[ $F =~ $number_regex ]] ; then
    echo "Error - Please use a whole positive or negative number for input." >&2; exit 1
 fi
 
-
 C=($F-32)/1.8
-echo "$C" | bc
+echo "scale = 2; $C" | bc
